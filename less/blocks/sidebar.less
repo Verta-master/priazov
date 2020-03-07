@@ -2,3 +2,59 @@
   width: 262px;
   margin-left: 15px;
 }
+
+.sidebar__banner {
+  margin-bottom: 15px;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.sidebar__menu {
+  margin-bottom: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+  background-color: #36a9be;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 10px;
+    width: 45px;
+    height: 45px;
+    background-image: url(../img/icons/home.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.sidebar__list {
+  .reset();
+  list-style: none;
+}
+
+.sidebar__item {
+  border-bottom: 1px solid #87d5e1;
+  
+  &:last-child {
+    border-bottom: 0;
+  }
+  
+  a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+  }
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}

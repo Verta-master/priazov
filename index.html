@@ -190,6 +190,7 @@
     <div class="wrapper wrapper--columns">
       <aside class="sidebar">
         <nav class="sidebar__menu">
+          <button type="button" class="sidebar__btn">Навигация</button>
           <ul class="sidebar__list">
             <li class="sidebar__item"><a href="#">Главная</a></li>
             <li class="sidebar__item"><a href="#">Врачи</a></li>
@@ -206,14 +207,16 @@
           </ul>
         </nav>
         
-        <div class="sidebar__banner">
-          <img src="img/images/left_1.png" alt="Banner">
-        </div>
-        <div class="sidebar__banner">
-          <img src="img/images/left_2.png" alt="Banner">
-        </div>
-        <div class="sidebar__banner">
-          <img src="img/images/left_3.png" alt="Banner">
+        <div class="sidebar__banners">
+          <div class="sidebar__banner">
+            <img src="img/images/left_1.png" alt="Banner">
+          </div>
+          <div class="sidebar__banner">
+            <img src="img/images/left_2.png" alt="Banner">
+          </div>
+          <div class="sidebar__banner">
+            <img src="img/images/left_3.png" alt="Banner">
+          </div>
         </div>
       </aside>
       
@@ -358,6 +361,15 @@
       preventClicks: false,
       preventClicksPropagation: false,
     });
+  </script>
+  
+  <!-- Mobile menu -->
+  <script>
+    if (window.innerWidth < 1022) {
+      $('.sidebar__btn').click(function() {
+        $('.sidebar__list').slideToggle();
+      })
+    }
   </script>
 </body>
 </html>

@@ -236,19 +236,19 @@
             <tr>
               <td>
                 <p><b>График работы</b><br>
-                <b>Водолечебницы:</b><br>
+                <b>Водолечебницы:</b><br><br>
                 <b>Пн-Пт:</b> с 8:00 до 20:00<br>
                 <b>Суб:</b> с 8:00 до 17:00</p>
               </td>
               <td>
                 <p><b>Забор анализов:</b><br>
-                ул. Отдельская, 328 (Водолечебница «Приазовье»)<br>
+                ул. Отдельская, 328 (Водолечебница «Приазовье»)<br><br>
                 <b>Пн-Пт:</b> с 8:00 до 14:00<br>
                 <b>Суб:</b> с 8:00 до 10:00</p>
               </td>
               <td>
                 <p><b>Забор анализов:</b><br>
-                ул. Ленина, 23 (напротив Детской поликлиники)<br>
+                ул. Ленина, 23 (напротив Детской поликлиники)<br><br>
                 <b>Пн-Пт:</b> с 7:00 до 11:00</p>
               </td>
             </tr>
@@ -309,13 +309,12 @@
           <li class="social__item">
             <a href="#" class="social__link"><img src="img/icons/pd2.png" alt="Pd2" title="Pd2"></a>
           </li>
-          <address>Краснодарский край,<span>г. Славянск-на-Кубани, ул. Отдельская, 328</span></address>
         </ul>
         <div class="footer__counter">
           <img src="img/icons/counter.gif" alt="counter">
         </div>
       </div>
-      <p>Разработка и поддержка сайта от <a href="#">ViKstudio.RU</a></p>
+      <p class="footer__comment">Разработка и поддержка сайта от <a href="#">ViKstudio.RU</a></p>
     </div>
   </footer>
   
@@ -334,6 +333,20 @@
       preventClicksPropagation: false,
       slidesPerView: 6,
       spaceBetween: 20,
+      breakpoints: {
+        1170: {
+          slidesPerView: 5,
+        },
+        1022: {
+          slidesPerView: 4,
+        },
+        766: {
+          slidesPerView: 3,
+        },
+        480: {
+          slidesPerView: 2,
+        }
+      }
     });
     
     var mySwiper = new Swiper ('.promo__slider', {
